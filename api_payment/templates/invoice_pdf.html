@@ -1,0 +1,85 @@
+<head>
+        
+	<style>
+		@page {
+			size: a4 portrait;
+			@frame header_frame {           /* Static Frame */
+				-pdf-frame-content: header_content;
+				left: 50pt; width: 512pt; top: 50pt; height: 40pt;
+			}
+			@frame content_frame {          /* Content Frame */
+				left: 50pt; width: 512pt; top: 90pt; height: 632pt;
+			}
+			@frame footer_frame {           /* Another static Frame */
+				-pdf-frame-content: footer_content;
+				left: 50pt; width: 512pt; top: 772pt; height: 20pt;
+			}
+		}
+	</style>
+	</head>
+	
+	<body>
+		<!-- Content for Static Frame 'header_frame' -->
+		<div id="header_content">
+    <table>
+      <tr>
+        <td><h3>Invoice JALA.ai</h3></td>
+        <td><h3>No. invoice : 11/JALA/IX/22</h3></td>
+      </tr>
+    </table>
+			
+		</div>
+	
+		<!-- Content for Static Frame 'footer_frame' -->
+		<div id="footer_content">(c) - page <pdf:pagenumber>
+			of <pdf:pagecount>
+		</div>
+	
+		<!-- HTML Content -->
+		<table>
+				<tr>
+          <td><h4>Order from</h4></td>
+          <td><h4>Billed to</h4></td>
+				</tr>
+				<tr>
+					<td>JALA Digital Indonesia</td>
+					<td>dila@jala.ai</td>
+				</tr>
+
+		</table>
+	
+		<hr>
+	
+		<table>
+			<tr>
+	 
+				<th>Detail</th>
+				<th>Qty</th>
+				<th>Price every qty</th>
+				<th>Total</th>
+			</tr>
+			<tr>
+	 
+				<td>Paket Starter - Quarterly</td>
+				<td>5</td>
+				<td>Rp. 420.000</td>
+				<td>Rp. 23104642.0</td>
+			</tr>
+			<tr>
+	 
+				<td>Onborading Service </td>
+				<td>1</td>
+				<td>Rp. 5.000.000</td>
+				<td>Rp. 5.000.000</td>
+			</tr>
+		</table>
+	
+		<hr>
+    <p style="text-align:right"><strong>Sub Total: Rp. 28104642.0 </strong></p>
+    <p style="text-align:right"><strong>Tax : Rp. 3091511 </strong></p>
+		<p style="text-align:right"><strong>Total: Rp. 31196152.0 </strong></p>
+    <p style="text-align:center"><strong>Payment Method: Bank Transfer BCA </strong></p>
+    <p style="text-align:center"><strong>Nomor VA: 9999992323 </strong></p>
+	</body>
+	</html>>
+	</html>
